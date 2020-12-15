@@ -45,15 +45,27 @@ namespace uib3pn_IRF_project
             }
             dataGridView1.DataSource = Employees;
         }
-
+        List<EmployeesToExport> EmployeesToExport = new List<EmployeesToExport>();
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActionButton actionbutton = new ActionButton();
             foreach (ActionButton item in panel1.Controls)
             {
-
+                panel1.Controls.Remove(item);
+                item.Dispose();
             }
             panel1.Controls.Add(actionbutton);
+            var EmployeeData = (from x in EmployeesToExport where x.FirstName == (string)comboBox1.SelectedItem select x.phone).FirstOrDefault();
+            if (EmployeeData=="")
+            {
+                actionbutton.IsEmployee = false;
+            }
+            else
+            {
+                actionbutton.IsEmployee = true;
+            }
+            actionbutton._left = dataGridView1.Width + 10;
+            
         }
     }
 }
