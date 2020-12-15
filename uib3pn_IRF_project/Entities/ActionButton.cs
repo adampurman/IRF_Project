@@ -26,13 +26,13 @@ namespace uib3pn_IRF_project.Entities
                 {
                     MouseDown += ActionButton_MouseDown;
                     Text = "Modify data";
-                    ForeColor = Color.Green;
+                    BackColor = Color.Green;
                 }
                 else
                 {
                     MouseDown += ActionButton_MouseDown1;
                     Text = "Add data";
-                    ForeColor = Color.Yellow;
+                    BackColor = Color.Yellow;
                 }
 
             }
@@ -42,6 +42,7 @@ namespace uib3pn_IRF_project.Entities
         {
             EmployeeDataForm employeeDataForm = new EmployeeDataForm(name,country,email,"","");
             employeeDataForm.ShowDialog();
+
         }
 
         private void ActionButton_MouseDown(object sender, MouseEventArgs e)
@@ -53,7 +54,7 @@ namespace uib3pn_IRF_project.Entities
         public ActionButton()
         {
             Top = 30;
-            Left = 600;//_left;
+            Left = 500;//_left;
         }
     }
 }

@@ -18,8 +18,10 @@ namespace uib3pn_IRF_project
     {
         List<Employee> Employees = new List<Employee>();
         String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"GeneratedData.xml");
+        List<EmployeesToExport> EmployeesToExport=new List<EmployeesToExport>();
         public Form1()
         {
+          //  EmployeesToExport = new List<EmployeesToExport>();
             InitializeComponent();
            /* using (StreamReader sr = new StreamReader(path, Encoding.Default))
             {
@@ -58,7 +60,7 @@ namespace uib3pn_IRF_project
 
             }
         }
-        //List<EmployeesToExport> EmployeesToExport = new  List<EmployeesToExport>();
+        
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActionButton actionbutton = new ActionButton();

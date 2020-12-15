@@ -34,6 +34,8 @@
             this.phonetxt = new System.Windows.Forms.TextBox();
             this.genderCombo = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.malepanel = new System.Windows.Forms.Panel();
+            this.femalepanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // nametxt
@@ -86,11 +88,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // malepanel
+            // 
+            this.malepanel.Location = new System.Drawing.Point(441, 34);
+            this.malepanel.Name = "malepanel";
+            this.malepanel.Size = new System.Drawing.Size(200, 100);
+            this.malepanel.TabIndex = 6;
+            // 
+            // femalepanel
+            // 
+            this.femalepanel.Location = new System.Drawing.Point(441, 156);
+            this.femalepanel.Name = "femalepanel";
+            this.femalepanel.Size = new System.Drawing.Size(200, 100);
+            this.femalepanel.TabIndex = 7;
+            // 
             // EmployeeDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 287);
+            this.ClientSize = new System.Drawing.Size(753, 287);
+            this.Controls.Add(this.femalepanel);
+            this.Controls.Add(this.malepanel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.genderCombo);
             this.Controls.Add(this.phonetxt);
@@ -112,5 +130,7 @@
         private System.Windows.Forms.TextBox phonetxt;
         private System.Windows.Forms.ComboBox genderCombo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel malepanel;
+        private System.Windows.Forms.Panel femalepanel;
     }
 }
