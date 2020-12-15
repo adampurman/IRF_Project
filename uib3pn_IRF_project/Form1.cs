@@ -45,5 +45,15 @@ namespace uib3pn_IRF_project
             }
             dataGridView1.DataSource = Employees;
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ActionButton actionbutton = new ActionButton();
+            foreach (ActionButton item in panel1.Controls)
+            {
+
+            }
+            panel1.Controls.Add(actionbutton);
+        }
     }
 }
