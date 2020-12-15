@@ -15,6 +15,11 @@ namespace uib3pn_IRF_project.Entities
         public EmployeeDataForm(string Name, string Country, string Email,string gender, string phone)
         {
             InitializeComponent();
+            nametxt.Text = Name;
+            countrytxt.Text = Country;
+            emailtxt.Text = Email;
+            genderCombo.SelectedItem = gender;
+            phonetxt.Text = phone;
         }
     }
 }

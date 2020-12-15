@@ -44,19 +44,33 @@ namespace uib3pn_IRF_project
                     //(Employee)Enum.Parse(typeof(Employee), element.GetAttribute("Country"));
             }
             dataGridView1.DataSource = Employees;
+            comboBox1.Items.Clear();
+            foreach  (var item in Employees)
+            {
+                EmployeesToExport.Add(new EmployeesToExport(){ 
+                FirstName=item.FirstName,
+                Country=item.Country,
+                Email=item.Email,
+                gender="",
+                phone=""
+                });
+                comboBox1.Items.Add(item.FirstName);
+
+            }
         }
         List<EmployeesToExport> EmployeesToExport = new List<EmployeesToExport>();
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActionButton actionbutton = new ActionButton();
-            foreach (ActionButton item in panel1.Controls)
+            foreach (ActionButton item in panel1.Controls.OfType<ActionButton>())
             {
+                
                 panel1.Controls.Remove(item);
                 item.Dispose();
             }
             panel1.Controls.Add(actionbutton);
-            var EmployeeData = (from x in EmployeesToExport where x.FirstName == (string)comboBox1.SelectedItem select x.phone).FirstOrDefault();
-            if (EmployeeData=="")
+            var EmployeeData = (from x in EmployeesToExport where x.FirstName == (string)comboBox1.SelectedItem select x).FirstOrDefault();
+            if (EmployeeData.phone=="")
             {
                 actionbutton.IsEmployee = false;
             }
@@ -64,8 +78,15 @@ namespace uib3pn_IRF_project
             {
                 actionbutton.IsEmployee = true;
             }
-            actionbutton._left = dataGridView1.Width + 10;
-            
+            actionbutton._left = dataGridView1.Width + 10+dataGridView1.Left;
+            actionbutton.name = EmployeeData.FirstName;
+            actionbutton.email = EmployeeData.Email;
+            actionbutton.country = EmployeeData.Country.ToString();
+            actionbutton.gender = EmployeeData.gender;
+            actionbutton.phone = EmployeeData.phone;
+
+
+
         }
     }
 }

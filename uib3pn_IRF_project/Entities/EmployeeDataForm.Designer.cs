@@ -66,6 +66,10 @@
             // genderCombo
             // 
             this.genderCombo.FormattingEnabled = true;
+            this.genderCombo.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
             this.genderCombo.Location = new System.Drawing.Point(293, 49);
             this.genderCombo.Name = "genderCombo";
             this.genderCombo.Size = new System.Drawing.Size(121, 21);
@@ -75,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(508, 287);
             this.Controls.Add(this.genderCombo);
             this.Controls.Add(this.phonetxt);
             this.Controls.Add(this.countrytxt);

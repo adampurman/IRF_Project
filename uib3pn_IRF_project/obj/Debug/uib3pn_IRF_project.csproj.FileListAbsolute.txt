@@ -8,3 +8,4 @@ C:\Users\Ádám\source\repos\IRF_Project\uib3pn_IRF_project\obj\Debug\uib3pn_IRF
 C:\Users\Ádám\source\repos\IRF_Project\uib3pn_IRF_project\obj\Debug\uib3pn_IRF_project.csproj.CoreCompileInputs.cache
 C:\Users\Ádám\source\repos\IRF_Project\uib3pn_IRF_project\obj\Debug\uib3pn_IRF_project.exe
 C:\Users\Ádám\source\repos\IRF_Project\uib3pn_IRF_project\obj\Debug\uib3pn_IRF_project.pdb
+C:\Users\Ádám\source\repos\IRF_Project\uib3pn_IRF_project\obj\Debug\uib3pn_IRF_project.Entities.EmployeeDataForm.resources
