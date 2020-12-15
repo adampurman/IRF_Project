@@ -64,6 +64,7 @@
     <Compile Include="Entities\head.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Entities\Person.cs" />
     <Compile Include="Entities\skirt.cs">
       <SubType>Component</SubType>
     </Compile>

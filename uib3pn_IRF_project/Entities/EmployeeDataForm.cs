@@ -24,7 +24,7 @@ namespace uib3pn_IRF_project.Entities
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+           
         }
     }
 }
