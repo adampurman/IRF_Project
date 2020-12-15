@@ -16,15 +16,34 @@ namespace uib3pn_IRF_project
 {
     public partial class Form1 : Form
     {
+        List<Employee> Employees = new List<Employee>();
+        String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"GeneratedData.xml");
         public Form1()
         {
             InitializeComponent();
-
+           /* using (StreamReader sr = new StreamReader(path, Encoding.Default))
+            {
+                string xmlFile = sr.ReadLine();
+            }*/
             var xml = new XmlDocument();
             //xml.LoadXml(GeneratedData);
-            String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"GeneratedData.xml");
-            xml.LoadXml(path);
+            
+            xml.Load(path);
 
+            foreach (XmlElement element in xml.DocumentElement)
+            {
+                var newemployee = new Employee();
+                Employees.Add(newemployee);
+                // MessageBox.Show(element.GetAttribute("Country"));
+                var country = (XmlElement)element.ChildNodes[2];
+                var name = (XmlElement)element.ChildNodes[0];
+                var email = (XmlElement)element.ChildNodes[1];
+                newemployee.Country = (CountryEnum)Enum.Parse(typeof (CountryEnum),country.InnerText);
+                newemployee.FirstName = name.InnerText;
+                newemployee.Email = email.InnerText;
+                    //(Employee)Enum.Parse(typeof(Employee), element.GetAttribute("Country"));
+            }
+            dataGridView1.DataSource = Employees;
         }
     }
 }

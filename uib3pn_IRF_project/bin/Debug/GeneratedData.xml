@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<records xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Employees>
 	<record>
 		<FirstName>Lionel</FirstName>
 		<Email>nec@arcuiaculisenim.com</Email>
@@ -500,4 +499,4 @@
 		<Email>vel.arcu.eu@inmagna.ca</Email>
 		<Country>7</Country>
 	</record>
-</records>
+</Employees>

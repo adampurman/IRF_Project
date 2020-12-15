@@ -8,8 +8,8 @@ namespace uib3pn_IRF_project.Entities
 {
     class Employee
     {
-        string FirstName { get; set; }
-        string Email { get; set; }
-        CountryEnum Country { get; set; }
+        public string FirstName { get; set; }
+        public string Email { get; set; }
+        public CountryEnum Country { get; set; }
     }
 }
