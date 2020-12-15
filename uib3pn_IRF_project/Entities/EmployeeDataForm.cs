@@ -21,5 +21,10 @@ namespace uib3pn_IRF_project.Entities
             genderCombo.SelectedItem = gender;
             phonetxt.Text = phone;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

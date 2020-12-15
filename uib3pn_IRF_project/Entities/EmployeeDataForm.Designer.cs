@@ -33,6 +33,7 @@
             this.countrytxt = new System.Windows.Forms.TextBox();
             this.phonetxt = new System.Windows.Forms.TextBox();
             this.genderCombo = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nametxt
@@ -75,11 +76,22 @@
             this.genderCombo.Size = new System.Drawing.Size(121, 21);
             this.genderCombo.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(188, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // EmployeeDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 287);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.genderCombo);
             this.Controls.Add(this.phonetxt);
             this.Controls.Add(this.countrytxt);
@@ -99,5 +111,6 @@
         private System.Windows.Forms.TextBox countrytxt;
         private System.Windows.Forms.TextBox phonetxt;
         private System.Windows.Forms.ComboBox genderCombo;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -58,7 +58,7 @@ namespace uib3pn_IRF_project
 
             }
         }
-        List<EmployeesToExport> EmployeesToExport = new List<EmployeesToExport>();
+        //List<EmployeesToExport> EmployeesToExport = new  List<EmployeesToExport>();
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ActionButton actionbutton = new ActionButton();
