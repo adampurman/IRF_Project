@@ -8,12 +8,15 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using uib3pn_IRF_project.Entities;
 
 namespace uib3pn_IRF_project.Entities
 {
     public partial class EmployeeDataForm : Form
     {
-        public EmployeeDataForm(string Name, string Country, string Email,string gender, string phone)
+        public EmployeesToExport EmployeeExport = new EmployeesToExport();
+        public bool ismodified = false;
+        public EmployeeDataForm(string Name, string Country, string Email, string gender, string phone)
         {
             InitializeComponent();
             nametxt.Text = Name;
@@ -26,8 +29,16 @@ namespace uib3pn_IRF_project.Entities
 
         private void button1_Click(object sender, EventArgs e)
         {
+            EmployeeExport.FirstName = nametxt.Text;
+            EmployeeExport.Email = emailtxt.Text;
+            EmployeeExport.Country = (CountryEnum)Enum.Parse(typeof(CountryEnum), countrytxt.Text);
+            EmployeeExport.gender = genderCombo.SelectedItem.ToString();
+            EmployeeExport.phone = phonetxt.Text;
+            ismodified = true;
+
+
             this.Close();
-            
+
         }
 
         private void genderCombo_SelectedIndexChanged(object sender, EventArgs e)
