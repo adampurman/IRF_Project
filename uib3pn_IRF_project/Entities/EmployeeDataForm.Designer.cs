@@ -40,28 +40,28 @@
             // 
             // nametxt
             // 
-            this.nametxt.Location = new System.Drawing.Point(92, 51);
+            this.nametxt.Location = new System.Drawing.Point(24, 22);
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(100, 20);
             this.nametxt.TabIndex = 0;
             // 
             // emailtxt
             // 
-            this.emailtxt.Location = new System.Drawing.Point(92, 103);
+            this.emailtxt.Location = new System.Drawing.Point(24, 74);
             this.emailtxt.Name = "emailtxt";
             this.emailtxt.Size = new System.Drawing.Size(100, 20);
             this.emailtxt.TabIndex = 1;
             // 
             // countrytxt
             // 
-            this.countrytxt.Location = new System.Drawing.Point(92, 77);
+            this.countrytxt.Location = new System.Drawing.Point(24, 48);
             this.countrytxt.Name = "countrytxt";
             this.countrytxt.Size = new System.Drawing.Size(100, 20);
             this.countrytxt.TabIndex = 2;
             // 
             // phonetxt
             // 
-            this.phonetxt.Location = new System.Drawing.Point(293, 77);
+            this.phonetxt.Location = new System.Drawing.Point(144, 50);
             this.phonetxt.Name = "phonetxt";
             this.phonetxt.Size = new System.Drawing.Size(100, 20);
             this.phonetxt.TabIndex = 3;
@@ -72,7 +72,7 @@
             this.genderCombo.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.genderCombo.Location = new System.Drawing.Point(293, 49);
+            this.genderCombo.Location = new System.Drawing.Point(144, 22);
             this.genderCombo.Name = "genderCombo";
             this.genderCombo.Size = new System.Drawing.Size(121, 21);
             this.genderCombo.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(188, 171);
+            this.button1.Location = new System.Drawing.Point(99, 115);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -90,14 +90,14 @@
             // 
             // malepanel
             // 
-            this.malepanel.Location = new System.Drawing.Point(481, 32);
+            this.malepanel.Location = new System.Drawing.Point(295, 19);
             this.malepanel.Name = "malepanel";
             this.malepanel.Size = new System.Drawing.Size(200, 100);
             this.malepanel.TabIndex = 6;
             // 
             // femalepanel
             // 
-            this.femalepanel.Location = new System.Drawing.Point(481, 154);
+            this.femalepanel.Location = new System.Drawing.Point(295, 157);
             this.femalepanel.Name = "femalepanel";
             this.femalepanel.Size = new System.Drawing.Size(200, 100);
             this.femalepanel.TabIndex = 7;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 287);
+            this.ClientSize = new System.Drawing.Size(501, 276);
             this.Controls.Add(this.femalepanel);
             this.Controls.Add(this.malepanel);
             this.Controls.Add(this.button1);

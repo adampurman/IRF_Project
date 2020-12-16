@@ -17,6 +17,7 @@ namespace uib3pn_IRF_project.Entities
             Height = 100;
             Left = 10;
             Paint += Body_Paint;
+            
         }
 
         private void Body_Paint(object sender, PaintEventArgs e)

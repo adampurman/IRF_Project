@@ -25,8 +25,8 @@ namespace uib3pn_IRF_project.Entities
         }
 
         private void button1_Click(object sender, EventArgs e)
-        { 
-            
+        {
+            this.Close();
         }
 
         private void genderCombo_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,13 +38,18 @@ namespace uib3pn_IRF_project.Entities
 
                 var malehead = new head();
                 var malebody = new body();
+                malehead.BackColor = Color.Blue;
+                malebody.BackColor = Color.Blue;
                 malepanel.Controls.Add(malehead);
                 malepanel.Controls.Add(malebody);
+
             }
             else
             {
                 var femalehead = new head();
                 var femalebody = new body();
+                femalehead.BackColor = Color.Pink;
+                femalebody.BackColor = Color.Pink;
                 femalepanel.Controls.Add(femalehead);
                 femalepanel.Controls.Add(femalebody);
             }
