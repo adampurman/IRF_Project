@@ -42,13 +42,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(410, 408);
+            this.dataGridView1.Size = new System.Drawing.Size(376, 408);
             this.dataGridView1.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(686, 15);
+            this.comboBox1.Location = new System.Drawing.Point(521, 20);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
@@ -59,12 +59,12 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(23, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(657, 424);
+            this.panel1.Size = new System.Drawing.Size(492, 424);
             this.panel1.TabIndex = 2;
             // 
             // exportbtn
             // 
-            this.exportbtn.Location = new System.Drawing.Point(686, 42);
+            this.exportbtn.Location = new System.Drawing.Point(521, 47);
             this.exportbtn.Name = "exportbtn";
             this.exportbtn.Size = new System.Drawing.Size(121, 23);
             this.exportbtn.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             // Closebtn
             // 
-            this.Closebtn.Location = new System.Drawing.Point(686, 71);
+            this.Closebtn.Location = new System.Drawing.Point(521, 76);
             this.Closebtn.Name = "Closebtn";
             this.Closebtn.Size = new System.Drawing.Size(121, 25);
             this.Closebtn.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 523);
+            this.ClientSize = new System.Drawing.Size(657, 443);
             this.Controls.Add(this.Closebtn);
             this.Controls.Add(this.exportbtn);
             this.Controls.Add(this.panel1);

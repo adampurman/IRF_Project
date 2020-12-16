@@ -68,6 +68,12 @@
     <Compile Include="Entities\skirt.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="femalebody.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="femalehead.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

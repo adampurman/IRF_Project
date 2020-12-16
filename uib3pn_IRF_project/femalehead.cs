@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace uib3pn_IRF_project.Entities
 {
-    public class head:Label
+    public class femalehead : Label
     {
-        public head()
+        public femalehead()
         {
             AutoSize = false;
             Width = 30;
@@ -26,7 +26,7 @@ namespace uib3pn_IRF_project.Entities
 
         protected void DrawImage(Graphics g)
         {
-            g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
+            g.FillEllipse(new SolidBrush(Color.Pink), 0, 0, Width, Height);
         }
     }
 }

@@ -82,8 +82,8 @@ namespace uib3pn_IRF_project.Entities
 
         public ActionButton()
         {
-            Top = 30;
-            Left = 500;//_left;
+            Top = 7;
+            Left = 400;//_left;
         }
     }
 }

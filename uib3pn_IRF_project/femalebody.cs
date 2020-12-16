@@ -8,16 +8,16 @@ using System.Windows.Forms;
 
 namespace uib3pn_IRF_project.Entities
 {
-    class body:Label
+    class femalebody : Label
     {
-        public body()
+        public femalebody()
         {
-            AutoSize = false; 
+            AutoSize = false;
             Width = 10;
             Height = 100;
             Left = 10;
             Paint += Body_Paint;
-            
+
         }
 
         private void Body_Paint(object sender, PaintEventArgs e)
@@ -28,9 +28,9 @@ namespace uib3pn_IRF_project.Entities
         private void DrawImage(Graphics g)
         {
 
-            g.FillRectangle(new SolidBrush(Color.Blue), 0, 0, Width, Height);
+            g.FillRectangle(new SolidBrush(Color.Pink), 0, 0, Width, Height);
         }
 
-       
+
     }
 }
