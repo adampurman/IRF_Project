@@ -58,8 +58,8 @@ namespace uib3pn_IRF_project.Entities
             {
                 var femalehead = new femalehead();
                 var femalebody = new femalebody();
-                femalepanel.Controls.Add(femalehead);
-                femalepanel.Controls.Add(femalebody);
+                malepanel.Controls.Add(femalehead);
+                malepanel.Controls.Add(femalebody);
             }
         }
     }
