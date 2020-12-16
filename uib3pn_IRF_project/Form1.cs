@@ -14,6 +14,7 @@ using uib3pn_IRF_project.Entities;
 
 namespace uib3pn_IRF_project
 {
+    //EmployeesToExport EmployeeExport = new EmployeesToExport();
     public partial class Form1 : Form
     {
         List<Employee> Employees = new List<Employee>();
@@ -87,8 +88,6 @@ namespace uib3pn_IRF_project
             actionbutton.gender = EmployeeData.gender;
             actionbutton.phone = EmployeeData.phone;
 
-
-
         }
 
         private void exportbtn_Click(object sender, EventArgs e)
@@ -121,6 +120,11 @@ namespace uib3pn_IRF_project
                 }
             }
 
+        }
+
+        private void Closebtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

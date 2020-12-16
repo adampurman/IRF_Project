@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace uib3pn_IRF_project.Entities
 {
-    class EmployeesToExport:Employee
+    public class EmployeesToExport:Employee
     {
         public string phone { get; set; }
         public string gender { get; set; }

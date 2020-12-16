@@ -27,6 +27,7 @@ namespace uib3pn_IRF_project.Entities
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            
         }
 
         private void genderCombo_SelectedIndexChanged(object sender, EventArgs e)
