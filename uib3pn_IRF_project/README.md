@@ -1,0 +1,4 @@
+# IRF_Project
+
+Ezen projekt célja, hogy egy xml alapú alkalmazott listát az alkalmazás beolvas, majd a benne található alkalmazottak alapadait ki lehessen egészíteni plusz adatokkal. A plusz adatokra egy külön form kerül megvalósításra. Ezen a formon kirajzolódik egy férfi vagy egy női test abban a pillanatban, ahogy az adatok felvivő felhasználó megadja plusz adatnak az alkalmazott nemét. A plusz adatok mentését követően a form bezárul és az Add data gomb egy már módosított alkalmazott esetén Modify data gombbá változik.
+Az adatok felvitelét követően az alkalmazottak listáját és azok adatait a felhasználó egy csv kiterjesztésű fájlba tudja exportálni.
