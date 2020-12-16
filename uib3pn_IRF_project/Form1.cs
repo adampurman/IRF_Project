@@ -90,5 +90,37 @@ namespace uib3pn_IRF_project
 
 
         }
+
+        private void exportbtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            sfd.InitialDirectory = Application.StartupPath;
+            sfd.Filter = "Comma Seperated Values (*.csv)|*.csv";
+            sfd.DefaultExt = "csv";
+            sfd.AddExtension = true;
+
+
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+
+            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            {
+                // Végigmegyünk a hallgató lista elemein
+                foreach (var s in EmployeesToExport)
+                {
+                    sw.Write(s.FirstName);
+                    sw.Write(";");
+                    sw.Write(s.Country);
+                    sw.Write(";");
+                    sw.Write(s.Email);
+                    sw.Write(";");
+                    sw.Write(s.phone);
+                    sw.Write(";");
+                    sw.Write(s.gender);
+                    sw.WriteLine(); 
+                }
+            }
+
+        }
     }
 }

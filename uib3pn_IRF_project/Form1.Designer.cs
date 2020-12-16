@@ -31,6 +31,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exportbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -40,7 +41,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(299, 408);
+            this.dataGridView1.Size = new System.Drawing.Size(410, 408);
             this.dataGridView1.TabIndex = 0;
             // 
             // comboBox1
@@ -60,11 +61,22 @@
             this.panel1.Size = new System.Drawing.Size(657, 424);
             this.panel1.TabIndex = 2;
             // 
+            // exportbtn
+            // 
+            this.exportbtn.Location = new System.Drawing.Point(707, 64);
+            this.exportbtn.Name = "exportbtn";
+            this.exportbtn.Size = new System.Drawing.Size(75, 23);
+            this.exportbtn.TabIndex = 3;
+            this.exportbtn.Text = "Export";
+            this.exportbtn.UseVisualStyleBackColor = true;
+            this.exportbtn.Click += new System.EventHandler(this.exportbtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 523);
+            this.Controls.Add(this.exportbtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
@@ -80,6 +92,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button exportbtn;
     }
 }
 
