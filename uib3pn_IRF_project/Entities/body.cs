@@ -12,8 +12,10 @@ namespace uib3pn_IRF_project.Entities
     {
         public body()
         {
-            AutoSize = false; Width = 10;
+            AutoSize = false; 
+            Width = 10;
             Height = 100;
+            Left = 10;
             Paint += Body_Paint;
         }
 

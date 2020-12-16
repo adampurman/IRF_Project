@@ -105,7 +105,7 @@ namespace uib3pn_IRF_project
 
             using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
             {
-                // Végigmegyünk a hallgató lista elemein
+                
                 foreach (var s in EmployeesToExport)
                 {
                     sw.Write(s.FirstName);

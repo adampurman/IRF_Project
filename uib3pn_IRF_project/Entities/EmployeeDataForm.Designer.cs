@@ -71,12 +71,12 @@
             this.genderCombo.FormattingEnabled = true;
             this.genderCombo.Items.AddRange(new object[] {
             "Male",
-            "Female",
-            "Other"});
+            "Female"});
             this.genderCombo.Location = new System.Drawing.Point(293, 49);
             this.genderCombo.Name = "genderCombo";
             this.genderCombo.Size = new System.Drawing.Size(121, 21);
             this.genderCombo.TabIndex = 4;
+            this.genderCombo.SelectedIndexChanged += new System.EventHandler(this.genderCombo_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -84,20 +84,20 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
+            this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // malepanel
             // 
-            this.malepanel.Location = new System.Drawing.Point(441, 34);
+            this.malepanel.Location = new System.Drawing.Point(481, 32);
             this.malepanel.Name = "malepanel";
             this.malepanel.Size = new System.Drawing.Size(200, 100);
             this.malepanel.TabIndex = 6;
             // 
             // femalepanel
             // 
-            this.femalepanel.Location = new System.Drawing.Point(441, 156);
+            this.femalepanel.Location = new System.Drawing.Point(481, 154);
             this.femalepanel.Name = "femalepanel";
             this.femalepanel.Size = new System.Drawing.Size(200, 100);
             this.femalepanel.TabIndex = 7;

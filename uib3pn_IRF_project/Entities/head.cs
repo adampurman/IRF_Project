@@ -13,7 +13,8 @@ namespace uib3pn_IRF_project.Entities
     {
         public head()
         {
-            AutoSize = false;Width = 30;
+            AutoSize = false;
+            Width = 30;
             Height = Width;
             Paint += Head_Paint;
         }
